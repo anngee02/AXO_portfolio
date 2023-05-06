@@ -42,3 +42,20 @@ scrollProgress.style.background = 'conic-gradient (#03cc65 ${scrollValue}%, #d7d
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+let hamburgerButton = document.querySelector('.hamburger')
+let navigation = document.querySelector('.navbar')
+
+hamburgerButton.addEventListener('click', () => {
+    hamburgerButton.classList.toggle('active')
+    navbar.classList.toggle('open')
+})
+
+let navigationLinks = document.querySelectorAll('.menu li a')
+
+navigationLinks.forEach(item => {
+    item.addEventListener('click', () => {
+        hamburgerButton.classList.remove('active')
+        navbar.classList.remove('open')
+    })
+})
