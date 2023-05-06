@@ -1,5 +1,5 @@
 # AXO portfolio
-technology which I use to create this project
+Technology which I use to create this project
 *html
 *css
 *scss
